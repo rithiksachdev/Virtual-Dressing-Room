@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Capture Demo</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body { 
+            text-align: center; 
+            background-color: #f8f9fa; /* Cool background color */
+        }
+        #videoElement, #processedFrame { 
+            width: 48%; /* Adjust width for side-by-side view */
+            border: 2px solid #dee2e6; /* Add border for better appearance */
+            margin: 10px;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Webcam Stream</h1>
+    <div class="video-container">
+        <video autoplay="true" id="videoElement" class="rounded"></video>
+        <img id="processedFrame" class="rounded" />
+        <button id="captureButton" class="btn btn-primary mt-3">Capture Photo</button>
+    </div>
+    <script>
+        var video = document.querySelector("#videoElement");
+
+        if (navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(function (stream) {
+                    video.srcObject = stream;
+                })
+                .catch(function (err0r) {
+                    console.log("Something went wrong!");
+                });
+        }
+
+        // Continuously capture video frames and send to Flask
+        //video.addEventListener('play', () => {
+            const canvas = document.createElement('canvas');
+            const context = canvas.getContext('2d');
+
+        const sendFrame = () => {
+            if (!video.paused && !video.ended) {
+                canvas.width = video.videoWidth;
+                canvas.height = video.videoHeight;
+                context.drawImage(video, 0, 0, canvas.width, canvas.height);
+                
+                // Convert canvas to blob and send to Flask backend
+                canvas.toBlob(blob => {
+                    const formData = new FormData();
+                    formData.append('frame', blob);
+                    formData.append('json_data', JSON.stringify({
+                        file_path: '{{ file_path }}'
+                    }))
+
+                    fetch('/upload_frame', {
+                        method: 'POST',
+                        body: formData
+                    }).then(response => response.json())
+                    .then(data => {
+                      console.log('Success:', data);
+                      if (data.image) {
+                          document.getElementById('processedFrame').src = 'data:image/jpeg;base64,' + data.image;
+                      } else {
+                        document.getElementById('error-message').textContent = "Failed to process the frame. Please try again.";
+                      }
+                    })
+                    .catch((error) => {
+                        console.error('Error:', error);
+                        //sendFrame()
+                        document.getElementById('error-message').textContent = "Failed to process the frame. Please try again.";
+                    });
+                }, 'image/jpeg');
+
+                //setTimeout(sendFrame, 2000);
+            }
+        };
+        //sendFrame();
+        document.getElementById('captureButton').addEventListener('click', () => {
+            sendFrame(); // First call
+            //sendFrame(); // Second call
+        });
+
+        //});
+    </script>
+    <div id="error-message" class="text-danger mt-3"></div>
+</body>
+</html>

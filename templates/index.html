@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Kryptomarket</title>
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Augmented trial room" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //for-mobile-apps -->
+	<link href="static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="static/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="static/css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- js -->
+	<script src="static/js/jquery.min.js"></script>
+	<!-- //js -->
+	<!-- countdown -->
+	<link rel="stylesheet" href="static/css/jquery.countdown.css" />
+	<!-- //countdown -->
+	<!-- cart -->
+	<script src="static/js/simpleCart.min.js"></script>
+	<!-- cart -->
+	<!-- for bootstrap working -->
+	<script type="text/javascript" src="static/js/bootstrap-3.1.1.min.js"></script>
+	<!-- //for bootstrap working -->
+	<!-- start-smooth-scrolling -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet">
+	<script type="text/javascript">
+
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+	<!-- //end-smooth-scrolling -->
+
+	<style>
+		.button {
+			background-color:#00ffee;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<script>
+		$('#myModal88').modal('show');
+	</script>
+	
+	<div class="header" style="padding-left: 5em;">
+		<div class="container">
+
+			<div class="w3l_logo">
+				<h1 class="ml-auto" style="font-display: Lato;font-size: 3em;"><a href="index.html">Virtual Trial Room</a></h1>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<hr>
+	<div class="banner-bottom">
+		<div class="container">
+			<div class="col-md-12 wthree_banner_bottom_right">
+				<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+					<ul id="myTab" class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab"
+								data-toggle="tab" aria-controls="home">Necklaces</a></li>
+						<li role="presentation"><a href="#earings" role="tab" id="earings-tab" data-toggle="tab"
+								aria-controls="earings">Earings</a></li>
+						<li role="presentation"><a href="#hats" role="tab" id="hats-tab" data-toggle="tab"
+								aria-controls="hats">Hats and Tiaras</a></li>
+						<li role="presentation"><a href="#tshirts" role="tab" id="tshirts-tab" data-toggle="tab"
+								aria-controls="tshirts">T-shirts</a></li>
+						<li role="presentation"><a href="#goggles" role="tab" id="goggles-tab" data-toggle="tab"
+								aria-controls="goggles">Goggles</a></li>
+					</ul>
+
+					<!--Necklaces -->
+					<div id="myTabContent" class="tab-content">
+						<div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+							<div class="e_commerce_tabs">
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Necklace11.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Silver Necklace</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.200</i></p>
+										<p><a class="item_add"
+												href="{{ url_for('tryon',method='POST', file_path='static,images,Necklace11.png') }}">Try
+												it Now!
+											</a>
+										</p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Necklace12.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Gold Necklace</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+                                        file_path='static,images,Necklace12.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Necklace14.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Silver Necklace</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+                                        file_path='static,images,Necklace14.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Necklace15.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Thread necklace</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.150</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+                                        file_path='static,images,Necklace15.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Necklace16.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Gold Chain</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.200</i></p>
+										<p><a class="item_add"
+												href="{{ url_for('tryon',method='POST', file_path='static,images,Necklace16.png') }}">Try
+												it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Necklace17.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Gold Chain</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.200</i></p>
+										<p><a class="item_add"
+												href="{{ url_for('tryon',method='POST', file_path='static,images,Necklace17.png') }}">Try
+												it Now!</a></p>
+									</div>
+								</div>
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Necklace18.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Silver Chain</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.200</i></p>
+										<p><a class="item_add"
+												href="{{ url_for('tryon',method='POST', file_path='static,images,Necklace18.png') }}">Try
+												it Now!</a></p>
+									</div>
+								</div>
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Necklace19.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Gold Chain</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.200</i></p>
+										<p><a class="item_add"
+												href="{{ url_for('tryon',method='POST', file_path='static,images,Necklace19.png') }}">Try
+												it Now!</a></p>
+									</div>
+								</div>
+								
+
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+
+						<!-- Earrings -->
+
+
+
+						<div role="tabpanel" class="tab-pane fade" id="earings" aria-labelledby="earings-tab">
+							<div class="e_commerce_tabs">
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Earrings21.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Goldwork earrings</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+									file_path='static,images,Earrings21.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Earrings22.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Studs</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.100</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+                                        file_path='static,images,Earrings22.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Earrings23.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Studs</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+                                        file_path='static,images,Earrings23.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Earrings24.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Silver Work Earings</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+                                        file_path='static,images,Earrings24.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Earrings25.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Goldwork earrings</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+                                        file_path='static,images,Earrings25.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Earrings26.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Studs</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+                                        file_path='static,images,Earrings26.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Earrings27.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Hangings</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+                                        file_path='static,images,Earrings27.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+
+						<!--Head gears-->
+
+						<div role="tabpanel" class="tab-pane fade" id="hats" aria-labelledby="hats-tab">
+							<div class="e_commerce_tabs">
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Tiaras31.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom"> </div>
+									</div>
+									<h5>Tiara</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+					file_path='static,images,Tiaras3,1.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Tiaras32.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Tiara</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.125</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+					file_path='static,images,Tiaras3,2.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Tiaras33.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Tiara</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.125</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+					file_path='static,images,Tiaras3,3.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Tiaras34.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Tiara</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.125</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+					file_path='static,images,Tiaras3,4.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Tiaras35.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Tiara</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.125</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+					file_path='static,images,Tiaras3,5.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Tiaras36.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Tiara</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+					file_path='static,images,Tiaras3,6.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Tiaras37.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Tiara</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+					file_path='static,images,Tiaras3,7.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Tiaras38.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Tiara</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+					file_path='static,images,Tiaras3,8.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Tiaras39.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Tiara</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+					file_path='static,images,Tiaras3,9.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+
+						<!--tshirts-->
+
+
+
+						<div role="tabpanel" class="tab-pane fade" id="tshirts" aria-labelledby="tshirts-tab">
+							<div class="e_commerce_tabs">
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Tops41.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Orange T-Shirt</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+												file_path='static,images,Tops41.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Tops42.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Pink T-Shirt</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+												file_path='static,images,Tops42.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Tops45.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Orange T-Shirt</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+												file_path='static,images,Tops45.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Tops47.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>White T-Shirt</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+												file_path='static,images,Tops47.jpg') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Tops48.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Black T-Shirt</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+												file_path='static,images,Tops48.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Tops49.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>White and Black full sleeves</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+												file_path='static,images,Tops49.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Tops43.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>White T-Shirt</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+												file_path='static,images,Tops43.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Tops44.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Pink T-Shirt</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+												file_path='static,images,Tops44.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Tops46.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Grey Early Bird T-Shirt</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+												file_path='static,images,Tops46.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+
+
+						<!--Goggles-->
+
+
+						<div role="tabpanel" class="tab-pane fade" id="goggles" aria-labelledby="goggles-tab">
+							<div class="e_commerce_tabs">
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Sunglasses61.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Goggles</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+                                        file_path='static,images,Sunglasses61.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Sunglasses62.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Sun glasses</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+                                        file_path='static,images,Sunglasses62.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Sunglasses63.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Spectacles</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+                                        file_path='static,images,Sunglasses63.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Sunglasses64.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Sun glasses</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+                                        file_path='static,images,Sunglasses64.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Sunglasses65.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Shades</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+                                        file_path='static,images,Sunglasses65.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Sunglasses66.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Shades</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+											file_path='static,images,Sunglasses66.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Sunglasses67.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Gray Sunglasses</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+											file_path='static,images,Sunglasses67.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Sunglasses68.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Blue Sunglasses</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+											file_path='static,images,Sunglasses68.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="col-md-4 e_commerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="/static/images/Sunglasses69.png" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+										</div>
+									</div>
+									<h5>Funny Eyes</h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>Rs.320</span> <i class="item_price">Rs.250</i></p>
+										<p><a class="item_add" href="{{ url_for('tryon',method='POST',
+											file_path='static,images,Sunglasses69.png') }}">Try it Now!</a></p>
+									</div>
+								</div>
+
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+
+						<script type="text/javascript">
+
+							var CART = []
+
+							function runPyScript(input) {
+								//alert("not Added Product To Cart")
+								var jqXHR = $.ajax({
+									type: "POST",
+									url: "/tryall",
+									async: false,
+									data: { mydata: input }
+								});
+
+								return jqXHR.responseText;
+							}
+
+							$('#check_out').click(function () {
+								alert("not Added Product To Cart")
+								datatosend = CART.join(' ');
+								result = runPyScript(datatosend);
+							});
+						</script>
+
+						<link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet"> 
+
+</body>
+
+</html>
