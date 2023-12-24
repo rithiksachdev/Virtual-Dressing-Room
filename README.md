@@ -4,7 +4,7 @@
 
 The Virtual Dressing Room is an innovative solution designed to revolutionize the online shopping experience. It leverages advanced image processing and web technologies to create a virtual try-on system, allowing users to see how different accessories and clothing items look on them without the need for physical trial.
 
-![Virtual Dressing Room Demo](https://github.com/rithiksachdev/Virtual-Dressing-Room/blob/main/static/images/Photo1.png)
+![Virtual Dressing Room Demo](https://github.com/rithiksachdev/Virtual-Dressing-Room/blob/main/static/images/photo1.png)
 
 ## Features
 
@@ -46,7 +46,7 @@ The Virtual Dressing Room is an innovative solution designed to revolutionize th
 
 After starting the application, navigate to `http://localhost:5000` in your web browser. Choose an accessory or clothing item and upload your photo to see the virtual try-on effect.
 
-![Usage Steps](https://github.com/rithiksachdev/Virtual-Dressing-Room/blob/main/static/images/Photo2.png)
+![Usage Steps](https://github.com/rithiksachdev/Virtual-Dressing-Room/blob/main/static/images/photo2.png)
 
 ## Contributing
 
