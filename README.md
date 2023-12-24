@@ -48,7 +48,7 @@ Experience the Virtual Dressing Room features live at [rithiksachdev.pythonanywh
 
 After starting the application, navigate to `http://localhost:5000` in your web browser. Choose an accessory or clothing item and upload your photo to see the virtual try-on effect.
 
-![Usage Steps](https://github.com/rithiksachdev/Virtual-Dressing-Room/blob/main/static/images/photo2.png)
+![Usage Steps](https://github.com/rithiksachdev/Virtual-Dressing-Room/blob/main/static/images/photo3.png)
 
 ## Contributing
 
